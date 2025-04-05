@@ -1,0 +1,152 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+    color: white;
+}
+
+.back-vid{
+    position:absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+  
+  
+  @media (max-aspect-ratio: 16/9){
+    .back-vid{
+      width: auto;
+      height: 100%;
+    }
+  }
+  
+  @media (min-aspect-ratio: 16/9){
+    .back-vid{
+      width: 100%;
+      height: auto;
+    }
+}
+h1{
+    padding:10px;
+    margin:10px;
+    font-size: 50px;
+    line-height: 1;
+    text-align: center;
+}
+h1 span{
+    color:#4acfee;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+  }
+  
+  nav ul{
+    list-style: none;
+    display: flex;
+  }
+  
+  nav a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    transition: 0.2s;
+    padding: 0px 20px;
+  }
+  
+  nav a:hover ,.active
+   {
+    color : #4acfee;
+    text-decoration: underline;
+  }
+
+.section{
+    display: flex;
+    flex-wrap: wrap;
+}
+.container1{
+    width: 600px;
+    height: 500px;
+    padding: 50px 90px;
+    margin-left:120px;
+}
+.heading{
+    text-align: center;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    text-decoration-thickness: 5px;
+    margin-bottom: 20px;
+}
+.bar{
+    font-size: 23px;
+}
+.Technical-bars .bar{
+    margin: 30px 0;
+
+}
+
+
+/* Styling the h2 tag by giving color, 
+letter spacing, font-size etc.*/
+.progress-bar-container h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #eee;
+    letter-spacing: 1px;
+    font-size: 20px;
+}
+
+/* Styling the border and box
+effect of the progress bar*/
+.progress-bar {
+    width: 800px;
+    height: 7px;
+    margin-top: 10px;
+    border: 1px solid #4acfee;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #4acfee;
+}
+
+/* Stylingthe background color of each 
+animation and border radius */
+.percentage {
+    display:block;
+    height: 100%;
+    background-color: #4acfee;
+    border-radius: 5px;
+    animation: progress 1500ms ease-in 1;
+}
+
+/* Assigning width of each languages*/
+
+.java {
+    width: 70%;
+}
+
+.python {
+    width: 80%;
+}
+
+.html {
+    width: 85%;
+}
+
+.css {
+    width: 55%;
+}
+
+.javascript {
+    width: 10%;
+}
+
+/* Animating the progress bar by 
+initially starting from 0*/
+@keyframes progress {
+    from {
+        width: 0;
+    }
+}

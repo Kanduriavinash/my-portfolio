@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+}
+
+.back-vid{
+    position:absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+  
+  
+  @media (max-aspect-ratio: 16/9){
+    .back-vid{
+      width: auto;
+      height: 100%;
+    }
+  }
+  
+  @media (min-aspect-ratio: 16/9){
+    .back-vid{
+      width: 100%;
+      height: auto;
+    }
+}
+h1{
+    padding:10px;
+    margin:10px;
+    font-size: 50px;
+    line-height: 1;
+    text-align: center;
+}
+h1 span{
+    color:#4acfee;
+}
+div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+  }
+  
+  div ul{
+    list-style: none;
+    display: flex;
+  }
+  
+  div a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    transition: 0.2s;
+    padding: 0px 20px;
+  }
+  
+  div a:hover ,.active
+   {
+    color : #4acfee;
+    text-decoration: underline;
+  }
+.container{
+    display: grid;
+    place-items: center;
+   
+  }
+.image-container{
+    display: flex;
+    gap: 30px;
+}
+.image-article{
+    position: relative;
+    overflow: hidden;
+}
+.college-image{
+    width: 258px;
+    height: auto;
+    border-radius: 1.5rem;
+}
+.my-data{
+    width: 250px;
+    background-color: var(--conatiner-color);
+    padding: 1.5rem 2rem;
+    box-shadow: 0 8px 24px #4acfee;
+    border-radius: 1rem;
+    position: absolute;
+    bottom: -9rem;
+    left: 0;
+    right: 0;
+    margin-inline:auto;
+    transition:opacity 1s 1s;
+}
+.image-discription{
+    display: block;
+    font-size: var(-small-font-size);
+    margin-bottom: .25rem;
+}
+.class-studied{
+    font-size: var(--h2-font-size);
+    font-weight: 500;
+    color: var(--class-color);
+    margin-bottom: .75rem;
+}
+.image-article:hover .my-data{
+    animation: show-data 1s forwards;
+    opacity: 1;
+    transition:opacity .3s;
+}
+.image-article:hover{
+    animation: remove-overflow 2s forwards;
+}
+.image-article:not(:hover) {
+    animation: show-overflow 2s forwards;
+}
+.image-article:not(:hover) .my-data{
+    animation: remove-data 1s forwards;
+}
+@keyframes show-data{
+    50%{
+        transform: translateY(-10rem);
+    }
+    100%{
+        transform: translateY(-7rem);
+    }
+}
+@keyframes remove-overflow{
+    to{
+        overflow: initial;
+    }
+}
+@keyframes remove-data{
+    0%{
+        transform: translateY(-7rem);
+    }
+    50%{
+        transform: translateY(-10rem);
+    }
+    100%{
+        transform: translateY(.5rem);
+    }
+
+}
+@keyframes show-overflow{
+    0%{
+        overflow: initial;
+        pointer-events: none;
+    }
+    50%{
+        overflow: hidden;
+    }
+}
+.column{float: left;}
