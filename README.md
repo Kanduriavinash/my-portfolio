@@ -1,25 +1,60 @@
-# my-portfolio
-My first project using HTML,CSS.
+# 🌐 My Portfolio — Original Web Portfolio
 
-My Portfolio link:https://kanduriavinash.github.io/Portfolio/
-And Backup Repository link:https://github.com/Kanduriavinash/Portfolio
- 
-What I have used to make it more attractive and responsive page.
-1.Hover effects
-2.Hyper links
-3.Transition effects
-4.Box-Shadow effects
-5.Background-video
-6.User guide in more section 
-7.Progress bar in Skills block.
+A personal portfolio website created as an early hands-on project in **HTML5 and CSS3**. It brings together an introduction, education, technical skills, and contact information in a single responsive website.
 
-Home-A page where you can have a whole summary of my portfolio.
-About-This page gives description of me.
-Education-Education from standard 1 to Btech.
-Skills-Showcase skills using progress bars 
-Contact-You can contact or reach me to work together.
-More-You can have user guide with video.
+<p>
+  <a href="https://kanduriavinash.github.io/Portfolio/"><img src="https://img.shields.io/badge/Visit%20Portfolio-Live-2563EB?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Live portfolio"></a>
+  <a href="https://github.com/Kanduriavinash"><img src="https://img.shields.io/badge/GitHub-Kanduriavinash-181717?style=for-the-badge&logo=github" alt="GitHub profile"></a>
+</p>
 
-For a Reference:
-https://github.com/user-attachments/assets/7bff0fba-cbe4-4495-b136-a4db463c5e6c
+## ✨ What the site includes
 
+- **Home** — an overview and introduction
+- **About** — background and interests
+- **Education** — academic journey
+- **Skills** — visual skill indicators
+- **Contact** — ways to connect
+- **More** — a guide to navigating the site
+
+## 🎨 UI details
+
+The original implementation explores:
+
+- Hover and transition effects
+- Box shadows and visual hierarchy
+- Background video
+- Navigation links between sections
+- Skill progress bars
+- Responsive page layout
+
+## 🧰 Built with
+
+| Technology | Purpose |
+| --- | --- |
+| HTML5 | Page structure and content |
+| CSS3 | Layout, styling, responsive behavior and effects |
+
+## 🚀 Run locally
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/Kanduriavinash/my-portfolio.git
+   cd my-portfolio
+   ```
+
+2. Open the HTML entry page in a modern browser. No package installation or backend server is required for this static site.
+
+## 🔗 Related links
+
+- [Live portfolio](https://kanduriavinash.github.io/Portfolio/)
+- [Portfolio repository](https://github.com/Kanduriavinash/Portfolio)
+- [GitHub profile](https://github.com/Kanduriavinash)
+
+## 👨‍💻 Author
+
+**Kanduri Avinash** · [GitHub](https://github.com/Kanduriavinash)
+
+---
+
+This repository documents an early portfolio build and the frontend fundamentals behind it.
